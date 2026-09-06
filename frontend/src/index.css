@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+body {
+  background-color: #F5F5F2;
+  color: #1F2937;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #D9D5C7; border-radius: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+.panel {
+  background: #ffffff;
+  border: 1px solid #E4E1D8;
+  border-radius: 10px;
+}
+
+.accent-bar {
+  border-left: 3px solid var(--accent, #C9932E);
+}
+
+.btn-primary {
+  background-color: #1B2A4A;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.55rem 1.1rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: background-color 0.15s ease;
+}
+.btn-primary:hover { background-color: #121B30; }
+.btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.btn-secondary {
+  background-color: transparent;
+  color: #1B2A4A;
+  border: 1px solid #1B2A4A;
+  border-radius: 8px;
+  padding: 0.55rem 1.1rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: all 0.15s ease;
+}
+.btn-secondary:hover { background-color: #1B2A4A; color: #fff; }
+
+.btn-gold {
+  background-color: #C9932E;
+  color: #1B2A4A;
+  border-radius: 8px;
+  padding: 0.55rem 1.1rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+.btn-gold:hover { background-color: #A67520; color: #fff; }
+
+.input-field {
+  width: 100%;
+  border: 1px solid #E4E1D8;
+  border-radius: 8px;
+  padding: 0.6rem 0.85rem;
+  font-size: 0.9rem;
+  background-color: #fff;
+}
+.input-field:focus {
+  outline: none;
+  border-color: #1B2A4A;
+  box-shadow: 0 0 0 3px rgba(27,42,74,0.12);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #C9CEDB;
+  transition: all 0.15s ease;
+}
+.nav-link:hover { background-color: rgba(255,255,255,0.06); color: #fff; }
+.nav-link.active { background-color: #C9932E; color: #1B2A4A; font-weight: 700; }
